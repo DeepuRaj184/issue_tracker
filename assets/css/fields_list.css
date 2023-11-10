@@ -1,0 +1,214 @@
+
+body{
+    background-image: linear-gradient(to right, #870000, #190a05);
+}
+
+#modal{
+    margin-top: 50px;
+    margin-left: 500px;
+    height: 500px;
+    width: 500px;
+    position: fixed;
+    z-index: 1;
+    background-color: whitesmoke;
+    filter: brightness(5px);
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#modal-heading{
+    font-size: 1rem;
+    color: red;
+    display: inline-flex;
+}
+#modal-heading span{
+    font-size: 2rem;
+    margin-left: 300px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#inner-modal p{
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+#inner-modal .input-fields{
+    height: 30px;
+    width: 400px;
+    margin-left: 20px;
+}
+#create-btn{
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 200px;
+    height: 50px;
+    background-color: lightgreen;
+    border-radius: 10%;
+}
+#filter-boxs{
+    height: 50px;
+    width: 700px;
+    margin-top: 20px;
+    margin-left: 370px;
+    display: flex;
+}
+
+#project-issue button{
+    background-color: blueviolet;
+    height: 50px;
+    font-size: 1.3rem;
+    width: 300px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+#filter-btn button{
+    margin-left: 80px;
+    margin-top: 10px;
+    height: 30px;
+    background-color: yellow;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#filter-modal{
+    height: 400px;
+    width: 500px;
+    background-color: whitesmoke;
+    margin-left: 450px;
+    display: flex;
+    margin-top: 20px;
+    display: none;
+}
+#modal-fields{
+    height: inherit;
+    width: 550px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.input-field{
+    width: 400px;
+    height: 30px;
+}
+
+#create-bug{
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 140px;
+    background-color: red;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+#close-btn{
+    width: 500px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: -20px;
+    background-color: green;
+    color: whitesmoke;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#field-box{
+    height: 300px;
+    width: 800px;
+    margin-top: 20px;
+    margin-left: 330px;
+    background-color: lightgrey;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+#field-box-inner{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-left: 50px;
+}
+#delete-issue{
+    height: 30px;
+    width: 400px;
+    background-color: red;
+}
+
+
+#filter-team{
+    height: 100px;
+    width: 600px;
+    background-color: whitesmoke;
+    margin-left: 430px;
+    border-radius: 5%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    z-index: 1;
+    display: none;
+}
+#filter-name{
+    height: 140px;
+    width: 600px;
+    background-color: whitesmoke;
+    margin-left: 430px;
+    border-radius: 5%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    display: none;
+    z-index: 1;
+}
+#filter-name-inner{
+    height: 70px;
+    width: 550px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+#filter-team-inner{
+    height: 70px;
+    width: 550px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+#filter-name-inner p {
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    color: blue;
+}
+#filter-name-inner input{
+    height: 30px;
+    width: 300px;
+}
+#name-search{
+    background-color: lawngreen;
+    height: 30px;
+    width: 150px;
+}
+
+#close-btn-name{
+    width: 300px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 110px;
+    background-color: orangered;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#close-btn-team{
+    width: 300px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 110px;
+    background-color: orangered;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#close-btn-name span{
+    color: black;
+    margin-left: 20px;
+}
+#close-btn-team span{
+    color: black;
+    margin-left: 80px;
+}
+.blurfilter{
+    filter: blur(3px);
+}

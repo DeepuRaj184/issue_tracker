@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/css/home.css">
+
+<div>
+        <ul>
+            <% for(let issue of issues){ %>
+                <div  id="display-issues">
+                        <div id="title-delete">
+                            <h2 id="title">NAME :-<span><%= issue.title %></span></h2> <a href="/issue/delete/<%= issue.id %>" id="delete">&times;</a>
+                        </div>
+                        <h3>Description :-<span><%= issue.description %></span></h3>
+                        <h3>Author :-<span><%= issue.author %></span></h3>
+                        <a href="/fields/list/<%= issue.id %>" ><button id="open-issue">OPEN ISSUE</button></a>
+                </div>
+            <%}%>
+        </ul>
+</div>
+

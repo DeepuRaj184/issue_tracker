@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/css/header.css">
+
+<header id="header">
+    <a href="/issue/main"><p>Issue Tracker</p></a>
+    <button id="issue"><p>Create Issue</p></button>
+</header>
+
+<div id="modal">
+    <div id="inner-modal">
+        <div id="modal-heading">
+        <h1>Create Issue</h1>
+        <span id="close">&times;</span>
+        </div>
+        <form action="/issue/create" method="POST">
+        <P>Title</P>
+        <input type="text" placeholder="Enter your title here" required class="input-fields" name="title">
+        <p>Description</p>
+        <input type="text" placeholder="Enter the description here" required class="input-fields" name="description">
+        <p>Author</p>
+        <input type="text" placeholder="Enter the Author name" required class="input-fields" name="author">
+        <input type="submit" value="Create Issue" id="create-btn">
+        </form>
+    </div>
+</div>
+<script src="/js/home.js"></script>

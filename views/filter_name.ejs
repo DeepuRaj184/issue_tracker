@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="/css/fields_list.css">
+
+<% for (let issue of projects){%>
+    <% if(author.toString().toLowerCase()==issue.author.toString().toLowerCase()){%>
+    <div id="field-box">
+        <div id="field-box-inner">
+            <h2>Title:-<%= issue.title %></h1>
+            <h2>Description:-<%= issue.description %> </h2>
+            <h2>Author:-<%= issue.author %></h2>
+            <p>Team:-<%= issue.lables %></p>
+        </div> 
+    </div>
+    <%}%>   
+<%}%>
+
+<script src="/js/filter.js"></script>

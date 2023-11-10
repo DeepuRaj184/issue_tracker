@@ -1,0 +1,81 @@
+<link rel="stylesheet" href="/css/fields_list.css">
+
+<div id="filter-boxs">
+    <div id="project-issue">
+        <button id="project-issue-btn">Create Project Issue</button>
+    </div>
+    <div id="filter-btn">
+        <button id="filter-name-btn">Filter by Name</button>
+        <button id="filter-team-btn">Filter by team</button>
+    </div>
+</div>
+
+<div id="filter-name">
+    <div id="filter-name-inner">
+        <form action="/fields/filter-name" method="POST">
+        <P>Find <span>ISSUES</span> By Name</P>
+        <input type="text" placeholder="Enter Name here" name="author" >
+        <input type="submit" id="name-search" value="Search By Name">
+        <p id="close-btn-name"><span>Click here to Exit</span></p>
+        </form>
+    </div>
+</div>
+
+    <div id="filter-team">
+        <div id="filter-team-inner">
+            <form action="/fields/filter-team" method="POST">
+            <P>Find <span>ISSUES</span> By Team</P>
+            <input type="checkbox" name="operations" value="operations" id="operations">
+            <label for="opeartions">operations</label>
+            <input type="checkbox" name="Frontend" value="Frontend" id="Frontend">
+            <label for="Frontend">Frontend</label>
+            <input type="checkbox" name="Backend" value="Backend" id="Backend">
+            <label for="Backend">Backend</label>
+            <input type="submit" value="Search" id="name-search">
+            <p id="close-btn-team"><span>Click here to Exit</span></p>
+            </form>
+        </div>
+    </div>
+
+
+<div id="filter-modal">
+    <div id="modal-fields">
+        <form action="/fields/create/<%= issues_current_id.id %>" method="POST">
+            <h2>Title</h2>
+            <input type="text" placeholder="Title" class="input-field" required name="title">
+            <h2>Description</h2>
+            <input type="hidden" name="project_bug" value="<%= issues_current_id.id %>">
+            <input type="text" placeholder="Description" class="input-field" required name="description">
+            <div id="checkboxes">
+                <input type="checkbox" name="lables" id="operations" value="operations">
+                <label for="operations">Operations</label>
+                <input type="checkbox" name="lables" id="Frontend" value="Frontend">
+                <label for="Frontend">Frontend</label>
+                <input type="checkbox" name="lables" id="Backend" value="Backend">
+                <label for="Backend">Backend</label>
+            </div>
+            <h2>Author</h2>
+            <input type="text" placeholder="Author" class="input-field" required name="author">
+            <div id="create-btns">
+                <input type="submit" value="Create Bug" id="create-bug">
+                <!-- <input type="submit" value="Close" id="close"> -->
+            </div>
+        </form>
+        <p id="close-btn"><span>Click here to Exit</span></p>
+    </div>
+</div>
+
+
+<% for (let issue of issues.projects){%>
+    <div id="field-box">
+        <div id="field-box-inner">
+            <h2>Title:-<%= issue.title %></h2>
+            <h2>Description:-<%= issue.description %></h2>
+            <p>Team:-<%= issue.lables %></p>
+            <h2>Author:-<%= issue.author %></h2>
+            <a href="/fields/delete/<%= issue.id %>"><button id="delete-issue">Delete Issue</button></a>
+        </div> 
+    </div>
+<%}%>
+
+<script src="/js/filter.js"></script>

@@ -1,0 +1,94 @@
+body{
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+#modal{
+    margin-top: 50px;
+    margin-left: 500px;
+    height: 500px;
+    width: 500px;
+    position: fixed;
+    z-index: 1;
+    background-color: whitesmoke;
+    filter: brightness(5px);
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#modal-heading{
+    font-size: 1rem;
+    color: red;
+    display: inline-flex;
+}
+#modal-heading span{
+    font-size: 2rem;
+    margin-left: 300px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#inner-modal p{
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+#inner-modal .input-fields{
+    height: 30px;
+    width: 400px;
+    margin-left: 20px;
+}
+#create-btn{
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 200px;
+    height: 50px;
+    background-color: lightgreen;
+    border-radius: 10%;
+}
+
+#display-issues{
+    height: 230px;
+    width: 700px;
+    margin-left: 400px;
+    background-color: lightcyan;
+    margin-top: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 2%;
+}
+#display-issues h2{
+    margin-left: 30px;
+}
+#display-issues h3{
+    margin-left: 60px;
+}
+
+#title-delete{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* horizontal spacing */
+    align-content: space-between; 
+    align-items: flex-end;
+}
+#title-delete>a{
+    text-decoration: none;
+    color: brown;
+}
+#delete{
+    font-size: 2.3rem;
+    color: white;
+    background-color: wheat;
+    margin-right: 10px;
+    cursor: pointer; 
+    text-decoration: none;
+}
+#delete:hover{
+    color: red;
+    background-color: black;
+}
+
+#open-issue{
+    margin-left: 400px;
+    height: 50px;
+    width: 150px;
+    background-color: green;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    border-radius: 30%;
+}
+
